@@ -16,12 +16,6 @@ plugins {
 
 repositories {
   mavenCentral()
-  maven("https://repo.jpenilla.xyz/snapshots/") {
-    mavenContent {
-      snapshotsOnly()
-      includeGroup("xyz.jpenilla")
-    }
-  }
   maven("https://central.sonatype.com/repository/maven-snapshots/") {
     mavenContent { snapshotsOnly() }
   }
@@ -33,6 +27,9 @@ repositories {
   maven("https://jitpack.io") {
     content { includeGroupByRegex("com\\.github\\..*") }
   }
+  maven("https://s01.oss.sonatype.org/content/groups/public/")
+  maven("https://oss.sonatype.org/content/groups/public/")
+  maven("https://repo.jpenilla.xyz/snapshots/")
 }
 
 dependencies {
@@ -50,6 +47,7 @@ dependencies {
   implementation(platform("net.kyori:adventure-bom:4.24.0"))
   implementation("net.kyori", "adventure-extra-kotlin")
   implementation("net.kyori", "adventure-serializer-configurate4")
+  implementation("net.kyori:adventure-text-feature-pagination:4.0.0-SNAPSHOT")
 
   implementation(platform("org.incendo:cloud-bom:2.0.0"))
   implementation("org.incendo:cloud-kotlin-extensions")

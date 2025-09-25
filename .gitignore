@@ -11,8 +11,8 @@
 out/
 
 # Eclipse
-.classpath/
-.project/
+.classpath
+.project
 .settings/
 
 # Compiled class file
