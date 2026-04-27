@@ -6,7 +6,7 @@ authors:
   - jmp
 website: $website
 depend:
-  - Vault
+  - LuckPerms
 api-version: $apiVersion
 softdepend:
   - PlaceholderAPI

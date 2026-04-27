@@ -36,7 +36,7 @@ dependencies {
   implementation(platform(kotlin("bom")))
 
   compileOnly("dev.folia", "folia-api", "1.19.4-R0.1-SNAPSHOT")
-  compileOnly("com.github.MilkBowl", "VaultAPI", "1.7.1")
+  compileOnly("net.luckperms", "api", "5.5")
   compileOnly("net.essentialsx", "EssentialsX", "2.21.2") {
     isTransitive = false
   }
